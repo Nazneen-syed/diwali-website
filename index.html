@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 1</title>
+    <style>
+        body{
+            min-height: 20vh;
+            background-size: cover;
+            background-image: url("https://i.pinimg.com/564x/46/9f/78/469f78613feea3298a5da61b4837a651.jpg");
+        }
+        .title{
+            color: rgb(0, 0, 0);
+        }
+        .parent-container{
+            border-radius: 10px;
+            background-color: white;
+            width: 36%;
+            padding: 2%;
+            text-align: center;
+            margin: auto;
+            margin-top: 12.5%;
+            box-shadow: 0px 0px 10px rgb(196, 196, 196);
+            
+        }
+        .form-field{
+            margin: 10px 0px;
+        }
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            
+        }
+        .form-field label{
+            font-weight: bold;
+            
+        }
+        .form-btn{
+            width: 30%;
+            padding: 8px;
+            background-color: rgb(128, 223, 220);
+            box-shadow: 3px 3px  grey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form class="parent-container"action="login.html">
+        <h2 class="title">Registration</h2>
+        <div class="form-field">
+            <label for="">Email:</label><br>
+            <input type="email" required
+            name = "email" 
+            placeholder="Enter your email"/>
+
+        </div>
+        <div class="form-field">
+            <label>Password:</label><br>
+            <input type="password" required
+            name = "password"
+            placeholder="Enter your password"/>
+        </div> 
+        <div class="form-field">
+            <label>Confirm password:</label><br>
+            <input type="password" required
+            name = "confirm_password"
+            placeholder="confirm your password"/>
+
+        </div>
+        <div class="form-field">
+            <label>Phone Number:</label><br>
+            <input type="text" required
+            name = "phone_number"
+            placeholder="Enter phone number"/>
+        </div>
+        <div class="form-field">
+            <button class="form-btn">submit</button>
+            <p>
+                Already have an account
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document 2</title>
+    <style>
+        body{
+            min-height: 20vh;
+            background-size: cover;
+            background-image: url("https://i.pinimg.com/236x/5a/fd/e1/5afde118bfde1b75aa8c4003b9ff01c6.jpg");
+        }
+        .title{
+            color:black;
+        }
+        .login-container{
+            border-radius: 10px;
+            background-color: white;
+            width: 25%;
+            padding: 2%;
+            text-align: center;
+            margin: auto;
+            margin-top: 14.5%;
+            box-shadow: 0px 0px 10px rgb(196, 196, 196);
+            
+        }
+        .login-field{
+            margin: 20px 0px;
+        }
+        .login-field input{
+            padding: 10px;
+            width: 80%;
+        
+        }
+        .labeltxt{
+            text-align: left;
+        }
+        .login-btn{
+            width: 30%;
+            padding: 8px;
+            background-color: rgb(128, 223, 220);
+            box-shadow: 3px 3px grey;
+        }
+
+        @media(max-width:430px){
+            .login-container{
+                flex-direction: column;
+            }
+            .login-container{
+                width: 90%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <form action="diwali.html" class="login-container">
+        <h2 class="title">Login</h2>
+        <div class="login-field">
+            <label class="labeltxt">Username:</label><br>
+            <input type="text" required
+            name = "username"
+            placeholder="enter your username"/>
+        </div>
+        <div class="login-field">
+            <label class="labeltxt">Password:</label><br>
+            <input type="password" required
+            name = "password"
+            placeholder="enter password"/>
+        </div>
+        <div><button class="login-btn">Submit</button>
+        <p>Dont have an account?
+        <a href="index.html">sign up here</a>
+        </p>
+        </div>
+        
+        
+    </form>
+</body>
+</html>
